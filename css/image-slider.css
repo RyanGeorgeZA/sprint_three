@@ -1,0 +1,46 @@
+/* generic styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 60%;
+    margin: auto; 
+    border: 3px solid skyblue;
+    overflow: hidden; /*display one each image at a time by hiding the rest */
+    position: relative;
+}
+
+.image-slideshow {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.image-slideshow img {
+    width: 100%;
+}
+
+#prevButton {
+    position: absolute;
+    top: 50%;
+    z-index: 10; /* to ensure that the arrow icons appear above slideshow*/
+    left: 1%;
+    font-size: 50px;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+#nextButton {
+    position: absolute;
+    top: 50%;
+    z-index: 10; /* to ensure that the arrow icons appear above slideshow*/
+    right: 1%;
+    font-size: 50px;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
